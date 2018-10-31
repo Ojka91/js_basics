@@ -25,3 +25,7 @@ console.log(twodimensions);
 
 //and select a specific one
 console.log(twodimensions[1][0]); //it prints number 4
+
+//to sort an array alphabeticaly
+var names=[Oscar, Anna, James, Oliver];
+names.sort();
