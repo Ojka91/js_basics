@@ -8,12 +8,13 @@
 //print lowest number array
 //print bigger number array
 //array and index
-//print repeating numbers on arrays
+//print repeating numbers on array
 //array into String
 //reverse numbers
 //alphabeticaly order String
 //convert to uppercase
 //find longest word
+
 
 //2. javascript basics
 
@@ -34,7 +35,7 @@ var ignasiAge=32;
 var ageDiff = age - ignasiAge;
 console.log(ageDiff);
 
-//exercice 4
+//if and else
 if(age<21){
     console.log("You are younger than 21");
 }else if(age>21){
@@ -43,7 +44,7 @@ if(age<21){
     console.log("You are 21");
 }
 
-//exercice 5
+//if and else II
 if(age<ignasiAge){
     console.log("Ignasi is older than you");
 }else if(age>ignasiAge){
@@ -55,7 +56,7 @@ if(age<ignasiAge){
 
 //3. javascript array
 
-    //sorting an array
+    //sorting an array alphabetically
 
 var names = ["Ernest", "Santi", "Anna", "Anna2", "ELvira", "Oriol", "Ling", "Claudia", "Andi", "Josep", "Patrick", "Andrei", "Oscar", "Vasil", "Alex", "Lluis", "Raul"];
 names.sort();
@@ -94,19 +95,48 @@ for (var q=0; q<agesclass.length; q++){
 
     //3 lowest number array
     
-function lowestArray(){
+function lowestArray(){ //method using Math.min
     var min = Math.min(...agesclass);
     console.log(min);
 }
 lowestArray();
 
+
+function lowestNumber(){ //method using conditionals
+    var a = agesclass[0];
+    
+    for (var x = 0; x<agesclass.length; x++){
+        if (a>agesclass[x]){
+            a = agesclass[x];
+        }
+        
+    }
+   console.log(a);
+    }
+lowestNumber();
+
+
     //4 biggest number array
 
-function biggestArray(){
+function biggestArray(){ //method using Math.max
     var max = Math.max(...agesclass);
     console.log(max);
 }
 biggestArray();
+
+
+function biggestNumber(){ //method using conditionals
+    var a = agesclass[0];
+    
+    for (var x = 0; x<agesclass.length; x++){
+        if (a<agesclass[x]){
+            a = agesclass[x];
+        }  
+    }
+   console.log(a);
+    }
+biggestNumber();
+
 
     //5 array and index
 
