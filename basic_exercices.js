@@ -22,7 +22,7 @@
 console.log("starting javascript...");
 
 
-//exercice 1
+//exercice 1    
 var myName = "Oscar";
 console.log(myName);
 
@@ -102,18 +102,18 @@ function lowestArray() { //method using Math.min
 lowestArray();
 
 
-function lowestNumber() { //method using conditionals
+function lowestNumber(array) { //method using conditionals
     var a = agesclass[0];
 
-    for (var x = 0; x < agesclass.length; x++) {
-        if (a > agesclass[x]) {
-            a = agesclass[x];
+    for (var x = 0; x < array.length; x++) {
+        if (a > array[x]) {
+            a = array[x];
         }
 
     }
     console.log(a);
 }
-lowestNumber();
+lowestNumber(agesclass);
 
 
 //4 biggest number array
@@ -125,17 +125,17 @@ function biggestArray() { //method using Math.max
 biggestArray();
 
 
-function biggestNumber() { //method using conditionals
+function biggestNumber(array) { //method using conditionals
     var a = agesclass[0];
 
-    for (var x = 0; x < agesclass.length; x++) {
-        if (a < agesclass[x]) {
-            a = agesclass[x];
+    for (var x = 0; x < array.length; x++) {
+        if (a < array[x]) {
+            a = array[x];
         }
     }
     console.log(a);
 }
-biggestNumber();
+biggestNumber(agesclass);
 
 
 //5 array and index
@@ -214,7 +214,7 @@ touppercase();
 //s3. same with for
 var pr = "prince of persia";
 
-function toUpperCase() {
+function toUpperCase(x) {
     pr = pr.split(" ");
     for (var x = 0; x < pr.length; x++) {
         pr[x] = pr[x].charAt(0).toUpperCase() + pr[x].slice(1);
